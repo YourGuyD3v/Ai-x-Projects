@@ -1,5 +1,53 @@
 # Architecture
 
+## High-Level Architecture
+
+```text
+                    ┌─────────────────────┐
+                    │       Telegram      │
+                    │   User Interaction  │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │    n8n Workflow      │
+                    │  Orchestration Layer │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Research / Search  │
+                    │      Provider        │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │      AI Agent       │
+                    │                     │
+                    │ - Job extraction    │
+                    │ - Job classification│
+                    │ - Fit analysis      │
+                    │ - Document creation │
+                    └──────┬───────┬──────┘
+                           │       │
+              ┌────────────┘       └────────────┐
+              ▼                                 ▼
+    ┌───────────────────┐             ┌───────────────────┐
+    │ Resume / RAG Data │             │ Tracking Tools    │
+    │                   │             │                   │
+    │ Experience        │             │ Google Sheets     │
+    │ Skills             │             │ Google Docs       │
+    │ Projects           │             │                   │
+    └───────────────────┘             └─────────┬─────────┘
+                                                │
+                                                ▼
+                                      ┌───────────────────┐
+                                      │ Structured Output │
+                                      │ + Human Review    │
+                                      └───────────────────┘
+```
+
+
 ## System overview
 
 The AI Job Search Copilot is a layered automation workflow that turns a user request into a structured, relevant, and reviewable shortlist of job opportunities.

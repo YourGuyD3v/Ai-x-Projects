@@ -1,0 +1,8 @@
+{
+  "query": "AI automation, ai automation internships, n8n",
+  "source": "telegram",
+  "filters": {
+    "remote_only": true,
+    "recent_days": 7
+  }
+}
