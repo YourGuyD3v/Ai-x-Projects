@@ -2,20 +2,31 @@
 
 ## Requirements
 
-- Access to an n8n instance
-- Perplexity or equivalent web research API access
-- Gemini or another LLM provider
-- Google Sheets access
-- Telegram bot access
+- [Workflow tool or platform, such as n8n, Zapier, Make, or custom app]
+- [API or service for data retrieval]
+- [AI model or provider]
+- [Database or spreadsheet tool]
+- [Messaging or notification integration, if applicable]
 
 ## Basic setup
 
-1. Import the sanitized workflow from `workflow/workflow.sanitized.json`.
-2. Add credentials for your APIs and services.
-3. Configure the job log sheet names for each category.
-4. Connect the candidate resume and summary documents.
-5. Test the workflow with one known search query.
+1. Copy this project template into your workspace.
+2. Replace placeholder values in the workflow and config files.
+3. Add credentials for the services you are integrating.
+4. Define your data sources and the expected input format.
+5. Connect the output destination, such as a sheet, database, dashboard, or message channel.
+6. Run a test with a small real input and confirm the workflow completes end-to-end.
+
+## Environment variables
+
+Use environment variables for anything sensitive, such as:
+
+- API keys
+- tokens
+- webhook secrets
+- database credentials
+- service account authentication
 
 ## Notes
 
-This document is a starter template and should be adapted to your environment.
+This setup guide is intentionally generic so it can be reused for many automation projects. Replace the placeholders with your actual stack.

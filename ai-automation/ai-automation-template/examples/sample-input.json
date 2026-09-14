@@ -1,8 +1,13 @@
 {
-  "query": "AI automation, ai automation internships, n8n",
-  "source": "telegram",
+  "query": "Add your sample request here",
+  "source": "example_source",
   "filters": {
-    "remote_only": true,
-    "recent_days": 7
+    "limit": 10,
+    "recent_only": true,
+    "region": "global"
+  },
+  "context": {
+    "user": "example-user",
+    "goal": "Describe the purpose of the request"
   }
 }

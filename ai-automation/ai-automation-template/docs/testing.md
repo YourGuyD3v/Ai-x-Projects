@@ -2,13 +2,26 @@
 
 ## Validation checklist
 
-- Confirm the Telegram trigger fires correctly.
-- Validate research results contain real job listings.
-- Check extraction of fields such as title, company, and URL.
-- Confirm duplicate detection prevents repeated rows.
-- Validate category routing to the right sheet.
-- Verify reporting output matches the expected format.
+- Confirm the trigger works correctly.
+- Verify the workflow accepts valid input data.
+- Check that parsing and normalization produce the expected output.
+- Validate filtering or deduplication logic.
+- Confirm AI results are structured and usable.
+- Test storage, delivery, and final output actions.
 
 ## Recommended smoke test
 
-Run one search for a single role or keyword and confirm the flow completes end-to-end.
+Run one small real example through the full flow and check that the output matches the intended behavior.
+
+## Suggested checks
+
+- input validation
+- empty or malformed data handling
+- API failure handling
+- duplicate handling
+- logging and error visibility
+- end-to-end output quality
+
+## Notes
+
+This file is a generic template. Add your project-specific scenarios, edge cases, and expected outputs as your workflow becomes more mature.
