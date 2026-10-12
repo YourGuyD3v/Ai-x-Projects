@@ -1,0 +1,3 @@
+[submodule "ai-automation"]
+	path = ai-automation
+	url = https://github.com/YourGuyD3v/AI-Automation.git
